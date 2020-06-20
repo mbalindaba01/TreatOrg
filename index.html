@@ -4,47 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treat</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap/dist/js/bootstrap.min.js">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <title>TreatOrg</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
+
 <body>
-
-    <section class="front">
-        <div class="box one">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class=" navbar-brand " href="# ">TREAT</a>
-                <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
-                  <span class="navbar-toggler-icon "></span>
-                </button>
-
-                <div class="collapse navbar-collapse " id="navbarSupportedContent ">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active ">
-                            <a class="nav-link " href="# ">About<span class="sr-only ">(current)</span></a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="# ">Team</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="# ">Contact<span class="sr-only ">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <img src="./images/cecilie-johnsen-G8CxFhKuPDU-unsplash.jpg " alt=" ">
-        </div>
-        <div class="box two ">
-            <div class="jumbotron " style="height:100%; ">
-                <h2 style="text-transform: none; font-size: 6vw; ">Trans Education Advocacy and Training</h2>
-                <p style="text-transform: none; font-size: 3vw; ">Treat is an organisation founded in Bulawayo, Zimbabwe. It aims to raise awareness on and facilitate the provision of equal opportunities to the youth of Zimbabwe.</p>
+    <div id="logo">
+        <img src="assets/img/14.png" alt="">
+    </div>
+    <!--Top Bar-->
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="container clearfix">
+            <div class="contact-info float-left">
+                <i class="fa fa-envelope-o"></i> <a href="#">treat.zim@gmail.com</a>
+                <i class="fa fa-phone"></i>+263 777 300669
+            </div>
+            <div class="social-links float-right">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
             </div>
         </div>
     </section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">TRE<span>A</span>T</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Organisational Profile</a>
+                        <a class="dropdown-item" href="#">Vision</a>
+                        <a class="dropdown-item" href="#">Meet the Team</a>
+                        <a class="dropdown-item" href="#">Meet the Board</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Intro Section-->
+    <section id="intro">
+
+        <div class="intro-content">
+            <h2>Trans Research Education<br>Advocacy and Training</h2>
+            <div>
+                <a href="#more" class="btn">Find Out More</a>
+                <a href="#contact" class="btn2">Contact Us</a>
+            </div>
+        </div>
+
+        <div id="intro-carousel" class="owl-carousel">
+            <div class="item" style="background-image: url('assets/img/2.jpg');"></div>
+            <div class="item" style="background-image: url('assets/img/9.jpg');"></div>
+            <div class="item" style="background-image: url('assets/img/12.jpg');"></div>
+            <div class="item" style="background-image: url('assets/img/13.jpg');"></div>
+        </div>
+
+    </section>
+
+    <!--Intro text-->
+    <section id="about" class="wow fadeInUp">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 content text-center">
+                    <h2>Trans Research Education Advocacy
+                        <br>and Training...</h2>
+                    <h3>..is an organisation founded in Bulawayo, Zimbabwe. It seeks to research and facilitate the provision of empirical evidence as to the needs and qualitative existence of young persons especially those who traditionally face barriers
+                        to accessing opportunities and spaces.</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Gallery-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/4.jpg" alt="Third slide">
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fa fa-facebook"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-instagram"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fa fa-youtube"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> Put some stuff later</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

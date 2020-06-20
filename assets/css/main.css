@@ -1,0 +1,267 @@
+body {
+    background: whitesmoke;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: pink;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: pink;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+
+/*logo*/
+
+#logo img {
+    z-index: 1100;
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0.6;
+}
+
+
+/*Top Bar*/
+
+#topbar {
+    background: whitesmoke;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+#topbar .contact-info a {
+    line-height: 1;
+    color: #555;
+}
+
+#topbar .contact-info a:hover {
+    color: pink;
+}
+
+#topbar .contact-info i {
+    color: pink;
+    padding: 6px;
+}
+
+#topbar .contact-info .fa-phone {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #e9e9e9;
+}
+
+#topbar .social-links a {
+    color: #555;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+    border-left: 1px solid #e9e9e9;
+}
+
+#topbar .social-links a:hover {
+    color: pink;
+}
+
+#topbar .social-links a:first-child {
+    border-left: 0;
+}
+
+
+/*navbar*/
+
+a .nav-link:hover {
+    color: pink;
+}
+
+nav a span {
+    color: pink;
+}
+
+
+/*Initial viewport*/
+
+#intro {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-size: cover;
+    padding: 0;
+}
+
+#intro .intro-content {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#intro .intro-content h2 {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    #intro .intro-content h2 {
+        font-size: 34px;
+    }
+}
+
+#intro .intro-content .btn,
+#intro .intro-content .btn2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+#intro .intro-content .btn {
+    background: lightskyblue;
+    border: 2px solid lightskyblue;
+}
+
+#intro .intro-content .btn:hover {
+    background: none;
+    color: lightskyblue;
+}
+
+#intro .intro-content .btn2 {
+    background: pink;
+    border: 2px solid pink;
+}
+
+#intro .intro-content .btn2:hover {
+    background: none;
+    color: pink;
+}
+
+#intro #intro-carousel {
+    z-index: 5;
+}
+
+#intro #intro-carousel::before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 7;
+}
+
+#intro #intro-carousel .item {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-property: opacity;
+}
+
+
+/* About Section*/
+
+#about {
+    padding: 60px 0 30px 0;
+}
+
+#about .content h2 {
+    color: lightskyblue;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+}
+
+#about .content h3 {
+    color: #555;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: italic;
+}
+
+#about .content p {
+    line-height: 26px;
+}
+
+#about .content p:last-child {
+    margin-bottom: 0;
+}
+
+#about .container-fluid {
+    background: whitesmoke;
+}
+
+
+/* gallery slide*/
+
+
+/*.carousel-inner {
+    width: 40vw;
+    margin: 0 auto 50px;
+}
+
+.carousel-item img {
+    height: 400px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+/*footer*/
+
+footer {
+    background: rgb(26, 24, 24);
+    color: pink;
+    font-size: 36px
+}
+
+.footer-copyright {
+    background: black;
+    font-size: 14px;
+}
