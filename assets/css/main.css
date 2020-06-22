@@ -7,13 +7,6 @@ body {
 a {
     color: pink;
     transition: 0.5s;
-}
-
-a:hover,
-a:active,
-a:focus {
-    color: pink;
-    outline: none;
     text-decoration: none;
 }
 
@@ -36,6 +29,10 @@ h6 {
 
 
 /*logo*/
+
+#logo {
+    max-width: 150px;
+}
 
 #logo img {
     z-index: 1100;
@@ -60,7 +57,7 @@ h6 {
 
 #topbar .contact-info a {
     line-height: 1;
-    color: #555;
+    color: #2a0800;
 }
 
 #topbar .contact-info a:hover {
@@ -79,7 +76,7 @@ h6 {
 }
 
 #topbar .social-links a {
-    color: #555;
+    color: #2a0800;
     padding: 4px 12px;
     display: inline-block;
     line-height: 1px;
@@ -97,7 +94,11 @@ h6 {
 
 /*navbar*/
 
-a .nav-link:hover {
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #2a0800;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
     color: pink;
 }
 
@@ -131,7 +132,7 @@ nav a span {
 }
 
 #intro .intro-content h2 {
-    color: #555;
+    color: #2a0800;
     margin-bottom: 30px;
     font-size: 64px;
     font-weight: 700;
@@ -218,7 +219,7 @@ nav a span {
 }
 
 #about .content h3 {
-    color: #555;
+    color: #2a0800;
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
@@ -240,16 +241,28 @@ nav a span {
 
 /* gallery slide*/
 
-
-/*.carousel-inner {
-    width: 40vw;
-    margin: 0 auto 50px;
-}
-
 .carousel-item img {
     height: 400px;
     width: 100%;
     border-radius: 25px;
+}
+
+.twitter-timeline {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#socialsection {
+    margin: 0 auto 25px;
+}
+
+@media only screen and (max-width:767px) {
+    #backdrop {
+        display: none;
+    }
+    #twitterfeed {
+        height: 60vh;
+    }
 }
 
 
