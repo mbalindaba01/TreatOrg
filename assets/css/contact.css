@@ -6,6 +6,12 @@
         color: #2a0800;
     }
     
+    a {
+        color: pink;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+    
     h1,
     h2,
     h3,
