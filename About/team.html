@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreatOrg</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/team.css">
+
+</head>
+<style>
+    a {
+        color: pink;
+        transition: 0.5s;
+    }
+    
+    a:hover,
+    a:active,
+    a:focus {
+        color: pink;
+        outline: none;
+        text-decoration: none;
+    }
+    /*Logo*/
+    
+    #logo img {
+        z-index: 1100;
+        height: 100px;
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0.6;
+    }
+    /*Top Bar*/
+    
+    #topbar {
+        background: whitesmoke;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+    }
+    
+    #topbar .contact-info a {
+        line-height: 1;
+        color: #555;
+    }
+    
+    #topbar .contact-info a:hover {
+        color: pink;
+    }
+    
+    #topbar .contact-info i {
+        color: pink;
+        padding: 6px;
+    }
+    
+    #topbar .contact-info .fa-phone {
+        padding-left: 20px;
+        margin-left: 20px;
+        border-left: 1px solid #e9e9e9;
+    }
+    
+    #topbar .social-links a {
+        color: #555;
+        padding: 4px 12px;
+        display: inline-block;
+        line-height: 1px;
+        border-left: 1px solid #e9e9e9;
+    }
+    
+    #topbar .social-links a:hover {
+        color: pink;
+    }
+    
+    #topbar .social-links a:first-child {
+        border-left: 0;
+    }
+    /*navbar*/
+    
+    a .nav-link:hover {
+        color: pink;
+    }
+    
+    nav a span {
+        color: pink;
+    }
+    /*footer*/
+    
+    footer {
+        background: rgb(26, 24, 24);
+        color: pink;
+        font-size: 36px
+    }
+    
+    .footer-copyright {
+        background: black;
+        font-size: 14px;
+    }
+    
+    section {
+        background-color: rgba(255, 192, 203, 0.418);
+    }
+    
+    section img {
+        max-width: 100%;
+        border: 2px aqua solid;
+        border-radius: 5vh;
+    }
+    
+    @media(min-width:62em) {
+        .ctn1 div {
+            padding: 2% 1% 1% 1%;
+        }
+        .ctn1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        .ctn1 h2,
+        .ctn h3 {
+            padding-top: 10%;
+            color: rgb(96, 36, 143);
+        }
+        .ctn2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        .ctn2 h2,
+        .ctn h3 {
+            padding-top: 10%;
+            color: rgb(96, 36, 143);
+        }
+    }
+</style>
+
+<body>
+    <div id="logo">
+        <img src="../assets/img/14.png" alt="">
+    </div>
+    <!--Top Bar-->
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="container clearfix">
+            <div class="contact-info float-left">
+                <i class="fa fa-envelope-o"></i> <a href="#">treatorg22@gmail.com</a>
+                <i class="fa fa-phone"></i>+263 777 300669
+            </div>
+            <div class="social-links float-right">
+                <a href="https://twitter.com/treat_zim" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/treatZim" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/treat_zim/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCdou6TDLyk1y5WxbuYG1oAA" target="_blank" class="youtube"><i class="fa fa-youtube-play"></i></a>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a style="font-size:170%;" class="navbar-brand" href="../index.html">TRE<span>A</span>T</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profile.html">Organisational Profile</a>
+                        <a class="dropdown-item" href="vision.html">Vision</a>
+                        <a class="dropdown-item" href="team.html">Meet the Team</a>
+                        <a class="dropdown-item" href="board.html">Meet the Board</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Partners and Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h1 style="text-decoration:underline; text-align:center; padding-top:5%; padding-bottom:2%; color:rgb(96, 36, 143); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            OUR TEAM</h1>
+        <h2 class="hideheader">Hover over the pictures to view the profiles</h2>
+        <!--First card-->
+        <div class="ctn1">
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front"></div>
+                    <div class="card__back">
+                        <p style="font-size:12px">
+                            <span style="font-weight:bold;"> Sam G Ndlovu </span> is the current Executive Director of Trans Research Education, Advocacy and Training (TREAT). He has been an independent Research Consultant with AIDS Fonds working on research
+                            about sex workers and hosting constructions in 2018. Sam has worked as a programs Officer for the Sexual Rights Center in Zimbabwe from 2011 to 2017. He worked with sex workers and LGBTIQ persons and he was a founding member
+                            of voice of the voiceless (VOVO) which is an LBT feminist organization in Zimbabwe. Sam also had a stint on the GALZ board in 2002. He holds a BA in Communication Science from University of South Africa. He is also a vibrant
+                            poet having come third in the Bulawayo National Gallery Photo poetry Exhibition, writing with Light in 2011 and being nominated for a ZIMA award in 2004 in the duo Double Trouble as a national musician. This has cultivated
+                            his Artivist approach to advocacy.
+                        </p>
+                        <!--Add social media icons on back of card later on-->
+                    </div>
+                </div>
+                <h2>Sam Ndlovu</h2>
+                <h3>Executive Director</h3>
+            </div>
+
+        </div>
+        <!--Second and third card-->
+        <div class="ctn2">
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front1"></div>
+                    <div class="card__back1">
+                        <p style="font-size:12px; padding-top:30px;">
+                            <span style="font-weight:bold;"> Dzoe Ahmad </span> is a transgender woman and activist.She is the Programs Coordinator. She works on implementing programs and projects to help the organization meet its goals and objectives,Researching
+                            grant proposal and fundraising opportunities, developing a relationship with various communities, government and other civil society organizations in raising funds and awareness and building resources. Dzoe has a Diploma in
+                            Secretarial Studies and is currently studying for a diploma in Accounting & Business StudiesDiploma Level 6 in Business Management
+
+                        </p>
+                    </div>
+                </div>
+                <h2>Dzoe Ahmad</h2>
+                <h3>Programs Coordinator </h3>
+            </div>
+
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front2"></div>
+                    <div class="card__back2">
+                        <p style="font-size:12px;padding-top:30px">
+                            <span style="font-weight:bold;"> Banothabo Ndlovu </span>works actively in processing invoices and assisting in the preparation of budgets. She handles the day to day banking and reconciliation of monthly and yearly transactions.
+                            She is a key Point of contact for other departments on financial and accounting matters. She assists with any other delegated duties assigned by the Executive Director. Banothabo has a Bachelor of Commerce Honours Degree in
+                            Management.
+                        </p>
+                    </div>
+                </div>
+                <h2>Banothabo Ndlovu</h2>
+                <h3>Finance Officer</h3>
+            </div>
+        </div>
+
+        <!--MEET THE TEAM-->
+
+        <!-- Footer -->
+    </section>
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/treatZim" target="_blank" class="btn-floating btn-fb mx-1">
+                        <i class="fa fa-facebook"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/treat_zim" target="_blank" class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/treat_zim/" target="_blank" class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-instagram"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.youtube.com/channel/UCdou6TDLyk1y5WxbuYG1oAA" target="_blank" class="btn-floating btn-dribbble mx-1">
+                        <i class="fa fa-youtube-play"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> Put some stuff later</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script>
+        let div1 = document.getElementsByClassName('card__front');
+        let div2 = document.getElementsByClassName('card__front1');
+        let div3 = document.getElementsByClassName('card__front2');
+        let img1 = document.createElement('img');
+        let img2 = document.createElement('img');
+        let img3 = document.createElement('img');
+        img1.src = "../assets/img/sam3.jpg";
+        img2.src = "../assets/img/dzoe2.jpg";
+        img3.src = "../assets/img/bano2.jpg";
+
+
+        const query = window.matchMedia('(max-width:61.9375em)');
+
+        function changes(query) {
+            if (query.matches) {
+                console.log("query matched");
+                div1[0].appendChild(img1);
+                div2[0].appendChild(img2);
+                div3[0].appendChild(img3);
+
+            } else {
+                img1.remove();
+                img2.remove();
+                img3.remove();
+            }
+        }
+
+        changes(query);
+        query.addListener(changes);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js "></script>
+</body>

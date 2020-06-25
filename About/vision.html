@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreatOrg</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+</head>
+<style>
+    a {
+        color: pink;
+        transition: 0.5s;
+    }
+    
+    a:hover,
+    a:active,
+    a:focus {
+        color: pink;
+        outline: none;
+        text-decoration: none;
+    }
+    /*Logo*/
+    
+    #logo img {
+        z-index: 1100;
+        height: 100px;
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0.6;
+    }
+    /*Top Bar*/
+    
+    #topbar {
+        background: whitesmoke;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+    }
+    
+    #topbar .contact-info a {
+        line-height: 1;
+        color: #555;
+    }
+    
+    #topbar .contact-info a:hover {
+        color: pink;
+    }
+    
+    #topbar .contact-info i {
+        color: pink;
+        padding: 6px;
+    }
+    
+    #topbar .contact-info .fa-phone {
+        padding-left: 20px;
+        margin-left: 20px;
+        border-left: 1px solid #e9e9e9;
+    }
+    
+    #topbar .social-links a {
+        color: #555;
+        padding: 4px 12px;
+        display: inline-block;
+        line-height: 1px;
+        border-left: 1px solid #e9e9e9;
+    }
+    
+    #topbar .social-links a:hover {
+        color: pink;
+    }
+    
+    #topbar .social-links a:first-child {
+        border-left: 0;
+    }
+    /*navbar*/
+    
+    a .nav-link:hover {
+        color: pink;
+    }
+    
+    nav a span {
+        color: pink;
+    }
+    /*footer*/
+    
+    footer {
+        background: rgb(26, 24, 24);
+        color: pink;
+        font-size: 36px
+    }
+    
+    .footer-copyright {
+        background: black;
+        font-size: 14px;
+    }
+    
+    .visb {
+        /*background-image:url(15.png);
+    background-repeat: no-repeat;
+    background-size:880px 900px;*/
+        margin-top: auto;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .body {
+        background-color: rgba(255, 192, 203, 0.418);
+    }
+    
+    div .text {
+        padding: 10% 0px 10% 0px;
+        width: 80%;
+    }
+    
+    h1 {
+        color: rgba(24, 207, 207, 0.925);
+        text-decoration: underline;
+    }
+    
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif
+    }
+</style>
+
+<body>
+    <div id="logo">
+        <img src="../assets/img/14.png" alt="">
+    </div>
+    <!--Top Bar-->
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="container clearfix">
+            <div class="contact-info float-left">
+                <i class="fa fa-envelope-o"></i> <a href="#">treatorg22@gmail.com</a>
+                <i class="fa fa-phone"></i>+263 777 300669
+            </div>
+            <div class="social-links float-right">
+                <a href="https://twitter.com/treat_zim" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/treatZim" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/treat_zim/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCdou6TDLyk1y5WxbuYG1oAA" target="_blank" class="youtube"><i class="fa fa-youtube-play"></i></a>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a style="font-size:170%;" class="navbar-brand" href="../index.html">TRE<span>A</span>T</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profile.html">Organisational Profile</a>
+                        <a class="dropdown-item" href="vision.html">Vision</a>
+                        <a class="dropdown-item" href="team.html">Meet the Team</a>
+                        <a class="dropdown-item" href="board.html">Meet the Board</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Partners and Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="body">
+        <div>
+            <div class="visb">
+                <div class="text">
+                    <h1>Vision</h1>
+                    <p>A world where all people have freedom to exist in a society that embraces diversity; and individuals develop their potential, live a full life and contribute to society with agency and power. </p>
+
+                    <h1>Mission</h1>
+                    <p>TREAT works proactively to inform and creatively transform attitudes, and address injustice and inequalities faced by the trans diverse population in Zimbabwe. </p>
+
+                    <h1>Values</h1>
+                    <p> The values TREAT aims to live by are:
+                        <ul>
+                            <li>Courage: TREAT staff and constituency are courageous people, meeting the challenge of living and expressing their trans* identity when possible, at home and in public spaces. They define courage as ‘unafraid to be me, to live
+                                my life’ and are working towards making this possible for all trans diverse persons in Zimbabwe. </li>
+                            <li> Accountability: in two senses, taking responsibility for resolving issues rather than allowing disagreements to fester, and “The obligation of an individual or organisation to account for its activities, accept responsibility
+                                for them, and to disclose the results in a transparent manner. It also includes the responsibility for money or other entrusted property.”
+                                <li> Professional: We put aside personal issues and do our jobs well. We keep to the defined standards – are honest and accountable.
+                                    <li> Confidentiality: We do not gossip. We keep shared confidences private.
+                                        <li> Humanity/Ubuntu: encourages humanity, creativity and the growth of all, collaborative decision-making and cooperation for the good of all.
+                                            <li> Resourceful: We are creative in finding resources and using them wisely and honestly in line with the defined purpose</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/treatZim" target="_blank" class="btn-floating btn-fb mx-1">
+                        <i class="fa fa-facebook"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/treat_zim" target="_blank" class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/treat_zim/" target="_blank" class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-instagram"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.youtube.com/channel/UCdou6TDLyk1y5WxbuYG1oAA" target="_blank" class="btn-floating btn-dribbble mx-1">
+                        <i class="fa fa-youtube-play"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> Put some stuff later</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js "></script>
+</body>

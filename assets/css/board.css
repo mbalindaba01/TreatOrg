@@ -1,0 +1,115 @@
+/*This CSS is for the card animation on larger screens*/
+
+.body {
+    background-color: rgba(255, 192, 203, 0.418);
+    padding: 0px;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Lato';
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 5%;
+    border-style: ridge;
+    border-color: aqua;
+    height: 350px;
+    background: rgba(185, 88, 209, 0.74);
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
+    overflow: hidden;
+}
+
+.card .title h2 {
+    font-size: 1.8em;
+}
+
+.card .title h3 {
+    font-size: 1em;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
+}
+
+.descriptions {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, .7);
+    width: 100%;
+    height: 100%;
+    transition: all .7s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+
+.card:hover .descriptions {
+    left: 0px;
+    transition: all .7s ease-in-out;
+    clip-path: circle(75%);
+}
+
+.card:hover {
+    transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .3);
+    transform: scale(.97);
+}
+
+.card:hover img {
+    transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+}
+
+.card h1 {
+    color: #ff3838;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+.card p {
+    line-height: 24px;
+    height: 70%;
+}
+
+.card button {
+    width: fit-content;
+    height: 40px;
+    cursor: pointer;
+    border-style: none;
+    background-color: #ff3838;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .4);
+    transition: all .5s ease-in-out;
+}
+
+.card button:hover {
+    transform: scale(.95) translateX(-5px);
+    transition: all .5s ease-in-out;
+}
+
+.hideheader {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*below 1000px the code breaks so this query was trying to address that but i failed obviously lol*/
