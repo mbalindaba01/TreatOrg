@@ -4,6 +4,10 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+#sponsors{
+    background-color: rgba(255, 192, 203, 0.418);
+}
+
 a {
     color: pink;
     transition: 0.5s;
